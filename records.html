@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Record - Indovina la Bandiera</title>
+      <!-- Bootstrap CSS via CDN (solo una versione) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome (ultima versione) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+<!-- Google Fonts (opzionale) -->
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:ital,wght@1,400&display=swap" rel="stylesheet">
+  <!-- Custom CSS (se necessario) -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo centrato -->
+      <a href="index.html" class="logo mb-3">
+      <!--  <img src="logo.png" alt="Logo" class="img-fluid"> -->
+      </a>
+      <!-- Titolo principale con effetto 3D -->
+      <h1 class="main-title">Indovina la Bandiera</h1>
+      <!-- Sottotitolo -->
+      <p class="subtitle">Divertiti a riconoscere le Bandiere!</p>
+    </div>
+  </div>
+</header>
+  <div class="container mt-5">
+    <h2 class="main-title" style="text-align:center;">Record di Gioco</h2>
+    <div id="recordsTable" class="mt-4"></div>
+    <div class="text-center mt-3">
+      <a href="index.html" class="btn btn-primary">Torna alla Home</a>
+    </div>
+  </div>
+  
+  <!-- jQuery per facilitare il fetching dei record -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $.getJSON("record.json", function(data) {
+          // Verifica che i dati siano un array e che ci siano record
+          if (!Array.isArray(data) || data.length === 0) {
+              $("#recordsTable").html("<p class='text-center'>Nessun record trovato.</p>");
+              return;
+          }
+          // Ordina i record per punteggio decrescente
+          data.sort(function(a, b) {
+              return b.score - a.score;
+          });
+          
+          // Crea la tabella HTML
+          var table = "<table class='table table-bordered table-striped'><thead><tr><th>Nome</th><th>Punteggio</th><th>Data</th></tr></thead><tbody>";
+          data.forEach(function(record) {
+              var date = new Date(record.timestamp * 1000);
+              table += "<tr><td>" + record.name + "</td><td>" + record.score + "</td><td>" + date.toLocaleString() + "</td></tr>";
+          });
+          table += "</tbody></table>";
+          $("#recordsTable").html(table);
+      }).fail(function(jqxhr, textStatus, error) {
+          var err = textStatus + ", " + error;
+          $("#recordsTable").html("<p class='text-center text-danger'>Errore nel caricamento dei record: " + err + "</p>");
+      });
+    });
+  </script>
+</body>
+</html>

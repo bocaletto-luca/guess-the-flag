@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Indovina la Bandiera | Home</title>
+    <!-- Bootstrap CSS via CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome (ultima versione) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (opzionale) -->
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Open+Sans:ital,wght@1,400&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo centrato -->
+      <a href="index.html" class="logo mb-3">
+      <!--  <img src="logo.png" alt="Logo" class="img-fluid"> -->
+      </a>
+      <!-- Titolo principale con effetto 3D -->
+      <h1 class="main-title">Indovina la Bandiera</h1>
+      <!-- Sottotitolo -->
+      <p class="subtitle">Divertiti a riconoscere le Bandiere!</p>
+      <p class="subtitle">Author: Bocaletto Luca</p>
+    </div>
+  </div>
+</header>
+	  
+    <div class="container text-center mt-5">
+      <h1 class="main-title">WEB Games</h1>
+      <p class="subtitle">Developed with: HTML5, CSS3, Javascript, php, Json.</p>
+      <p>
+      This Application is Open Source to work it needs a Web Server and php modules installed.
+      </p>
+      <div class="buttons mt-4">
+        <a href="game.html" class="btn btn-primary btn-lg mx-2">Gioca</a>
+        <!-- Se disponibile una pagina help.html potresti aggiungerla -->
+        <a href="records.html" class="btn btn-secondary btn-lg mx-2">Visualizza Record</a>
+      </div>
+    </div>
+    
+<footer class="footer bg-dark text-light py-3 fixed-bottom">
+  <div class="container text-center">
+  
+    <!-- Copyright -->
+    <p class="mb-2">&copy; <span id="copyrightYear"></span>
+      Bocaletto Luca - Tutti i diritti riservati
+    </p>
+    
+    <!-- Link Personali -->
+    <div class="mb-3">
+      <a href="https://bocalettoluca.altervista.org" class="btn btn-outline-light btn-sm" target="_blank">Official Site</a>
+      <a href="https://bocaletto-luca.github.io" class="btn btn-outline-light btn-sm" target="_blank">GitHub Site</a>
+      <a href="https://github.com/bocaletto-luca/" class="btn btn-outline-light btn-sm" target="_blank">GitHub Page</a>
+    </div>
+    
+    <!-- Social Icons -->
+    <div class="social-icons mb-3">
+      <a href="https://www.facebook.com/people/Luca-Bocaletto/pfbid0hB8KgX7XVmNF3zYgbDn7ciPSA3nMQYfNvCcdYnxoEmupGmzJ614YQ3Gjo8aVDiQBl/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <!--  <a href="https://x.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.reddit.com/" target="_blank"><i class="fab fa-reddit"></i></a>-->
+      <a href="https://www.youtube.com/@Elektronoide" target="_blank"><i class="fab fa-youtube"></i></a>
+      <a href="https://soundcloud.com/luca-bocaletto" target="_blank"><i class="fab fa-soundcloud"></i></a>
+    </div>
+    
+    <!-- Tecnologie e Strumenti -->
+    <div class="tech-icons">
+      <!-- Icone Preesistenti -->
+      <i class="fab fa-html5" title="HTML5"></i>
+      <i class="fab fa-css3" title="CSS3"></i>
+      <i class="fab fa-js" title="JavaScript"></i>
+      <i class="fab fa-php" title="PHP"></i>
+      <i class="fas fa-database" title="SQL / phpMyAdmin"></i>
+      <i class="fab fa-python" title="Python"></i>
+      <i class="fas fa-terminal" title="BASH"></i>
+      <i class="fas fa-code" title="C"></i>
+
+      <!-- Nuove icone richieste -->
+      <i class="fas fa-gamepad" title="Videogames"></i>
+      <i class="fas fa-desktop" title="Software"></i>
+      <i class="fas fa-server" title="Apache / Server"></i>
+      <i class="fas fa-tools" title="Webmin / Admin Tools"></i>
+      <i class="fab fa-wordpress" title="WordPress"></i>
+      <i class="fab fa-arduino" title="Arduino"></i>
+      <i class="fab fa-raspberry-pi" title="Raspberry Pi"></i>
+      <i class="fas fa-cogs" title="Game Engine"></i>
+      <i class="fas fa-code-branch" title="Open Source"></i>
+      <i class="fas fa-user-shield" title="Admin"></i>
+      <i class="fab fa-linux" title="Linux"></i>
+      <!-- Per GNU e GPL, poiché non esistono icone ufficiali in Font Awesome Free, usiamo uno span -->
+      <span class="tech-text" title="GNU">GNU</span>
+      <span class="tech-text" title="GPL">GPL</span>
+      <i class="fas fa-layer-group" title="Full-Stack"></i>
+      <i class="fas fa-code" title="Development"></i>
+    </div>
+  
+  </div>
+</footer>
+
+    <!-- Bootstrap JS (versione 5 non richiede JQuery per i componenti base) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script per aggiornare il copyright dopo che il DOM è caricato -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("copyrightYear").textContent = new Date().getFullYear();
+      });
+    </script>
+  </body>
+</html>

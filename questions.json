@@ -1,0 +1,162 @@
+[
+  {
+    "flag": "🇮🇹",
+    "answers": {
+      "a": "Italia",
+      "b": "Francia",
+      "c": "Germania",
+      "d": "Spagna"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇫🇷",
+    "answers": {
+      "a": "Belgio",
+      "b": "Francia",
+      "c": "Italia",
+      "d": "Olanda"
+    },
+    "correct": "b"
+  },
+  {
+    "flag": "🇩🇪",
+    "answers": {
+      "a": "Austria",
+      "b": "Svizzera",
+      "c": "Germania",
+      "d": "Polonia"
+    },
+    "correct": "c"
+  },
+  {
+    "flag": "🇪🇸",
+    "answers": {
+      "a": "Portogallo",
+      "b": "Spagna",
+      "c": "Italia",
+      "d": "Grecia"
+    },
+    "correct": "b"
+  },
+  {
+    "flag": "🇬🇧",
+    "answers": {
+      "a": "Stati Uniti",
+      "b": "Canada",
+      "c": "Regno Unito",
+      "d": "Australia"
+    },
+    "correct": "c"
+  },
+  {
+    "flag": "🇨🇦",
+    "answers": {
+      "a": "Canada",
+      "b": "Stati Uniti",
+      "c": "Regno Unito",
+      "d": "Francia"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇯🇵",
+    "answers": {
+      "a": "Cina",
+      "b": "Giappone",
+      "c": "Corea del Sud",
+      "d": "Vietnam"
+    },
+    "correct": "b"
+  },
+  {
+    "flag": "🇧🇷",
+    "answers": {
+      "a": "Argentina",
+      "b": "Brasile",
+      "c": "Messico",
+      "d": "Colombia"
+    },
+    "correct": "b"
+  },
+  {
+    "flag": "🇮🇳",
+    "answers": {
+      "a": "Pakistan",
+      "b": "Bangladesh",
+      "c": "India",
+      "d": "Sri Lanka"
+    },
+    "correct": "c"
+  },
+  {
+    "flag": "🇦🇺",
+    "answers": {
+      "a": "Nuova Zelanda",
+      "b": "Australia",
+      "c": "Inghilterra",
+      "d": "Sudafrica"
+    },
+    "correct": "b"
+  },
+  {
+    "flag": "🇺🇸",
+    "answers": {
+      "a": "Stati Uniti",
+      "b": "Canada",
+      "c": "Regno Unito",
+      "d": "Australia"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇨🇳",
+    "answers": {
+      "a": "Cina",
+      "b": "Giappone",
+      "c": "Corea del Sud",
+      "d": "Mongolia"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇰🇷",
+    "answers": {
+      "a": "Corea del Sud",
+      "b": "Corea del Nord",
+      "c": "Giappone",
+      "d": "Cina"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇲🇽",
+    "answers": {
+      "a": "Messico",
+      "b": "Spagna",
+      "c": "Argentina",
+      "d": "Perù"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇷🇺",
+    "answers": {
+      "a": "Russia",
+      "b": "Ucraina",
+      "c": "Polonia",
+      "d": "Repubblica Ceca"
+    },
+    "correct": "a"
+  },
+  {
+    "flag": "🇸🇪",
+    "answers": {
+      "a": "Norvegia",
+      "b": "Svezia",
+      "c": "Danimarca",
+      "d": "Finlandia"
+    },
+    "correct": "b"
+  }
+]

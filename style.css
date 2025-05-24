@@ -1,0 +1,129 @@
+/* Stili generali */
+body {
+  background-color: #f8f9fa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Canvas centrato e responsive */
+#gameCanvas {
+  border: 2px solid #343a40;
+  background-color: #fff;
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Tabellone dei premi */
+#prizeBoard ul {
+  list-style: none;
+  padding-left: 0;
+}
+#prizeBoard li {
+  padding: 8px 12px;
+  margin-bottom: 4px;
+  font-size: 16px;
+}
+
+/* Classe per ingrandire l'emoji della bandiera */
+.flagEmoji {
+  font-size: 80px;
+  line-height: 1;
+}
+
+/* Header generale: imposta un'altezza, background e centro verticale/orizzontale */
+.site-header {
+  height: 250px;  /* Regola in base alle tue esigenze */
+  background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Header Content: layout a colonna con tutto centrato */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo styling */
+.logo img {
+  max-width: 100px;  /* Regola la dimensione in base al logo */
+}
+
+/* Titolo principale con effetto 3D */
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  /* Effetto 3D con multiple ombre */
+  text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.2), 8px 8px 0 rgba(0, 0, 0, 0.15);
+  transform: perspective(500px) rotateX(2deg) rotateY(2deg);
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Sottotitolo elegante */
+.subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Responsive: ridimensiona i testi su dispositivi piccoli */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 2.5rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
+
+
+/* Footer */
+.footer {
+  text-align: center;
+  background: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+}
+
+.tech-icons i,
+.tech-icons .tech-text {
+  font-size: 20px;
+  margin: 0 8px;
+  color: white;
+  vertical-align: middle;
+}
+
+.tech-icons .tech-text {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+
+

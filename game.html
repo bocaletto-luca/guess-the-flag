@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Indovina la Bandiera - Gioco</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="site-header">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo centrato -->
+      <a href="index.html" class="logo mb-3">
+      <!--  <img src="logo.png" alt="Logo" class="img-fluid"> -->
+      </a>
+      <!-- Titolo principale con effetto 3D -->
+      <h1 class="main-title">Indovina la Bandiera</h1>
+      <!-- Sottotitolo -->
+      <p class="subtitle">Divertiti a riconoscere le Bandiere!</p>
+      <p class="subtitle">Author: Bocaletto Luca</p>
+    </div>
+  </div>
+</header>
+  <div class="container mt-3">
+    <!-- Area di stato: visualizza nome, numero domanda e premio attuale -->
+    <div id="statusArea" class="text-center mb-3"></div>
+    
+    <!-- Struttura a due colonne -->
+    <div class="row">
+      <!-- Colonna sinistra: Tabellone dei premi -->
+      <div class="col-md-4" id="prizeBoardContainer">
+        <div id="prizeBoard"></div>
+      </div>
+      
+      <!-- Colonna destra: Contenitore con Canvas (in alto) e Quiz Area (sotto) -->
+      <div class="col-md-8">
+        <!-- Container Canvas -->
+        <div id="canvasContainer" class="mb-3">
+          <canvas id="gameCanvas" width="800" height="200" class="d-block mx-auto"></canvas>
+        </div>
+        <!-- Area Quiz -->
+        <div id="quizArea" class="mt-3">
+          <div id="question" class="h4 text-center mb-3"></div>
+          <div id="answers" class="row"></div>
+          <div class="text-center mt-3">
+            <button id="quitGame" class="btn btn-warning">Ritirati e prendi il premio</button>
+            <button id="btn5050" class="btn btn-info mx-2">50 e 50</button>
+            <button id="btnSwitch" class="btn btn-info mx-2">Switch</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Sezione Aiuti: "50 e 50" e "Switch" -->
+    <div id="helpSection" class="text-center mb-3">
+       
+    </div>
+
+    <!-- Area di Fine Partita: mostra messaggio, punteggio, nome e pulsanti -->
+    <div id="endGame" class="text-center mt-4" style="display: none;">
+      <h3 id="resultMessage"></h3>
+      <p>Il tuo punteggio: € <span id="score"></span></p>
+      <p>Giocatore: <span id="displayPlayerName"></span></p>
+      <button id="submitScore" class="btn btn-success">Salva Record</button>
+      <br><br>
+      <button id="newGame" class="btn btn-primary">Nuova Partita</button>
+      <button id="closeGame" class="btn btn-secondary">Chiudi</button>
+    </div>
+  </div>
+  
+  <!-- Modal per richiedere il nome del giocatore -->
+  <div class="modal fade" id="playerModal" tabindex="-1" role="dialog" aria-labelledby="playerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+         <div class="modal-header">
+            <h5 class="modal-title" id="playerModalLabel">Inserisci il tuo nome per iniziare</h5>
+         </div>
+         <div class="modal-body">
+            <input type="text" id="modalPlayerName" class="form-control" placeholder="Il tuo nome...">
+         </div>
+         <div class="modal-footer">
+           <button type="button" class="btn btn-primary" id="startGameBtn">Inizia il gioco</button>
+         </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Inclusione degli script -->
+  <!-- jQuery (necessario per il modal di Bootstrap) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script per gestione degli input -->
+  <script src="controllers.js"></script>
+  <!-- Script principale con logica, animazioni e board -->
+  <script src="main.js"></script>
+</body>
+</html>
